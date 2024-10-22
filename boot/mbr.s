@@ -37,6 +37,6 @@ SECTION MBR vstart=0x7c00       ;代码从编译0x7c00地址开始
 ;打字字符串结束	
     jmp $		                ; 使程序悬停在此
 
-    message db "wu xi"
+    message db "yu"
     times 510-($-$$) db 0;      ;用 0 将本扇区剩余空间填充
     db 0x55,0xaa
